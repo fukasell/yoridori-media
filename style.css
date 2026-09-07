@@ -54,3 +54,14 @@ th { background: #f2efe8; }
 .site-footer { border-top: 1px solid var(--border); padding: 24px; text-align: center; color: var(--muted); font-size: 0.8em; }
 .site-footer nav { margin-bottom: 8px; }
 .site-footer nav a { margin: 0 8px; color: var(--muted); }
+
+/* 広告表示。目立たせるが本文の読み味は壊さない。 */
+.ad-disclosure {
+  background: #fff6e5;
+  border-left: 4px solid #d97706;
+  padding: 10px 14px;
+  margin: 14px 0;
+  font-size: .9em;
+  color: #4a4a4f;
+}
+.ad-disclosure strong { color: #b45309; }
