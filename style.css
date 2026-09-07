@@ -65,3 +65,8 @@ th { background: #f2efe8; }
   color: #4a4a4f;
 }
 .ad-disclosure strong { color: #b45309; }
+
+.decision-frame { padding-left: 1.4em; line-height: 1.9; }
+.decision-frame li { margin-bottom: 6px; }
+.related { margin-top: 32px; padding-top: 16px; border-top: 1px solid #e5e2da; }
+.related ul { padding-left: 1.2em; line-height: 1.9; }
