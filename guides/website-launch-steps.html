@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-site-verification" content="0W-gZFekzA8Jmp9gFt94_0ac3NYqPapqxqXsqfpktFw">
 <title>はじめてのサイト・ブログ開設：独自ドメイン取得からWordPress公開までの手順 | ヨリドリ</title>
 <meta name="description" content="独自ドメインでサイトやブログを公開するには、大きく分けて「レンタルサーバーの契約」「独自ドメインの取得」「ドメインをサーバーに追加してネームサーバーを設定」「無料独自SSLの設定」「WordPressのインストール」という作業が必要です。本">
 <link rel="canonical" href="https://fukasell.github.io/yoridori-media/guides/website-launch-steps.html">
@@ -18,6 +19,45 @@
 <link rel="stylesheet" href="../style.css">
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ヨリドリ","item":"https://fukasell.github.io/yoridori-media/"},{"@type":"ListItem","position":2,"name":"SaaS / Webサービス","item":"https://fukasell.github.io/yoridori-media/categories.html"},{"@type":"ListItem","position":3,"name":"はじめてのサイト・ブログ開設：独自ドメイン取得からWordPress公開までの手順","item":"https://fukasell.github.io/yoridori-media/guides/website-launch-steps.html"}]},{"@type":"HowTo","name":"はじめてのサイト・ブログ開設：独自ドメイン取得からWordPress公開までの手順","description":"独自ドメインでサイトやブログを公開するには、大きく分けて「レンタルサーバーの契約」「独自ドメインの取得」「ドメインをサーバーに追加してネームサーバーを設定」「無料独自SSLの設定」「WordPressのインストール」という作業が必要です。本記事は各社の料金比較ではなく、この一連の作業を公式マニュアル・公式FAQの記載にもとづいて順番に整理したものです。操作画面の名称・手順はエックスサーバーを例にしており、他社のレンタルサーバーでは画面名や設定項目が異なる場合があります。各サービスの料金・機能の比較は、本サイトの「独自ドメイン取得サービス比較」「レンタルサーバー比較」の記事をご覧ください。","step":[{"@type":"HowToStep","name":"1. レンタルサーバーを契約する（エックスサーバーの場合）","text":"先にレンタルサーバーを契約します。独自ドメインを持っていない状態でも申し込みでき、ドメインは後からサーバーパネルの「ドメイン設定」で追加できます。プランの選び方は本サイトの「レンタルサーバー比較」記事を参照してください。"},{"@type":"HowToStep","name":"2. 独自ドメインを取得する","text":"ドメイン取得サービスで希望のドメインを取得します。契約するレンタルサーバーと同じ会社でドメインも取得すると、ネームサーバーが最初から設定済みになっている場合があります（エックスサーバー公式マニュアルに記載）。別会社で取得する場合は、次の手順でネームサーバーの変更が必要です。比較は本サイトの「独自ドメイン取得サービス比較」記事を参照してください。"},{"@type":"HowToStep","name":"3. ドメインをサーバーに追加する（ネームサーバーの変更は他社取得時のみ必要）","text":"サーバーパネルの「ドメイン設定」からドメインを追加します。この追加作業は、ドメインをどこで取得した場合でも必ず必要です。エックスサーバー公式マニュアルによると、ドメイン設定がサーバーに反映されるまで数時間〜最大24時間程度かかる場合があります。取得したドメイン取得サービスとレンタルサーバーが別会社の場合は、これに加えてドメイン取得サービス側の管理画面でネームサーバーをレンタルサーバー側の値に変更する必要があります。この変更の反映時間はネームサーバーの参照先（ドメイン取得会社）によって異なり、エックスサーバー公式マニュアルでも「反映に要する時間については、他社ネームサーバーにお問い合わせください」とされています（一般に最大72時間程度かかる場合があるとされます）。同じ会社でドメインとサーバーを契約した場合は、このネームサーバー変更が不要なことがあります。"},{"@type":"HowToStep","name":"4. 無料独自SSLを設定する","text":"ドメイン追加時に「無料独自SSLを利用する」のチェックを外さずに進めると、SSL（https化）も同時に設定されます。エックスサーバー公式マニュアルによれば、SSL設定の反映には最大1時間程度かかり、設定直後は正しく表示されないことがある仕様です。設定が成功したかは、サーバーパネルの「SSL設定」一覧画面に対象ドメインが表示されているかで確認できます。反映後もブラウザでhttps://のドメインにアクセスして正しく鍵マークが表示されるかも合わせて確認してください。反映後も証明書エラーが出る、または自動更新が失敗する場合は、公式マニュアルの対処に沿って（1）ネームサーバー設定が契約中のサーバーを参照しているか確認する、（2）ドメインにリダイレクト設定をしている場合は更新完了まで一時的に無効化する、（3）サーバーパネルの「SSL設定」から対象ドメインを選び「更新」をクリックして手動で再設定する、の順に見直してください。"},{"@type":"HowToStep","name":"5. WordPressを簡単インストールする","text":"サーバーパネルの「WordPressを追加（簡単インストール）」から、サイトURL・ブログ名・ユーザー名・パスワードなどを入力してインストールします。エックスサーバー公式マニュアルの手順では、入力後の確認画面で「インストールする」を押すだけで完了します。サブドメインにインストールする場合は、先にサブドメイン設定を済ませておく必要があります（公式サポートFAQに記載）。"}]},{"@type":"WebPage","name":"はじめてのサイト・ブログ開設：独自ドメイン取得からWordPress公開までの手順","description":"独自ドメインでサイトやブログを公開するには、大きく分けて「レンタルサーバーの契約」「独自ドメインの取得」「ドメインをサーバーに追加してネームサーバーを設定」「無料独自SSLの設定」「WordPressのインストール」という作業が必要です。本記事は各社の料金比較ではなく、この一連の作業を公式マニュアル・公式FAQの記載にもとづいて順番に整理したものです。操作画面の名称・手順はエックスサーバーを例にしており、他社のレンタルサーバーでは画面名や設定項目が異なる場合があります。各サービスの料金・機能の比較は、本サイトの「独自ドメイン取得サービス比較」「レンタルサーバー比較」の記事をご覧ください。","url":"https://fukasell.github.io/yoridori-media/guides/website-launch-steps.html","dateModified":"2026-09-08","inLanguage":"ja","publisher":{"@type":"Organization","name":"FUKASELL"}}]}</script>
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VGW7X9VFGJ"></script>
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
+gtag('js',new Date());gtag('config','G-VGW7X9VFGJ');
+(function(){
+  // Attribution hint only: which of our own posts sent this reader here.
+  // Social posts append ?p=<persona_id>. It is NOT a property of the visitor
+  // and NOT a claim that a person exists - reading it as an audience segment
+  // would attribute traits to readers we have never measured. Absent means
+  // null, never a default bucket.
+  function personaId(){
+    try{var v=new URLSearchParams(location.search).get('p');return v||null}catch(e){return null}
+  }
+  // The affiliate URL carries account-identifying tracking tokens (a8mat,
+  // maf, a_id). Those belong in the ASP's system, not in our analytics, so
+  // only origin+path is recorded - enough to tell destinations apart,
+  // nothing that identifies the account.
+  function safeUrl(href){
+    try{var u=new URL(href);return u.origin+u.pathname}catch(e){return null}
+  }
+  document.addEventListener('click',function(e){
+    var a=e.target.closest&&e.target.closest('a[data-affiliate="1"]');
+    if(!a)return;
+    gtag('event','affiliate_click',{
+      offer_id:a.dataset.offerId||null,
+      advertiser:a.dataset.advertiser||null,
+      network:a.dataset.network||null,
+      persona_id:personaId(),
+      // pathname only. A query string can carry the attribution hint or a
+      // campaign tag, and a fragment can carry anything; neither belongs in a
+      // page identifier used for grouping.
+      source_page:location.pathname,
+      outbound_url:safeUrl(a.href),
+      channel:'web_seo',
+      transport_type:'beacon'
+    });
+  },true);
+})();
+</script>
 </head>
 <body>
 <header class="site-header">

@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-site-verification" content="0W-gZFekzA8Jmp9gFt94_0ac3NYqPapqxqXsqfpktFw">
 <title>お問い合わせ | ヨリドリ</title>
 <meta name="description" content="お問い合わせ">
 <link rel="canonical" href="https://fukasell.github.io/yoridori-media/contact.html">
@@ -18,6 +19,45 @@
 <link rel="stylesheet" href="style.css">
 
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VGW7X9VFGJ"></script>
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
+gtag('js',new Date());gtag('config','G-VGW7X9VFGJ');
+(function(){
+  // Attribution hint only: which of our own posts sent this reader here.
+  // Social posts append ?p=<persona_id>. It is NOT a property of the visitor
+  // and NOT a claim that a person exists - reading it as an audience segment
+  // would attribute traits to readers we have never measured. Absent means
+  // null, never a default bucket.
+  function personaId(){
+    try{var v=new URLSearchParams(location.search).get('p');return v||null}catch(e){return null}
+  }
+  // The affiliate URL carries account-identifying tracking tokens (a8mat,
+  // maf, a_id). Those belong in the ASP's system, not in our analytics, so
+  // only origin+path is recorded - enough to tell destinations apart,
+  // nothing that identifies the account.
+  function safeUrl(href){
+    try{var u=new URL(href);return u.origin+u.pathname}catch(e){return null}
+  }
+  document.addEventListener('click',function(e){
+    var a=e.target.closest&&e.target.closest('a[data-affiliate="1"]');
+    if(!a)return;
+    gtag('event','affiliate_click',{
+      offer_id:a.dataset.offerId||null,
+      advertiser:a.dataset.advertiser||null,
+      network:a.dataset.network||null,
+      persona_id:personaId(),
+      // pathname only. A query string can carry the attribution hint or a
+      // campaign tag, and a fragment can carry anything; neither belongs in a
+      // page identifier used for grouping.
+      source_page:location.pathname,
+      outbound_url:safeUrl(a.href),
+      channel:'web_seo',
+      transport_type:'beacon'
+    });
+  },true);
+})();
+</script>
 </head>
 <body>
 <header class="site-header">
