@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "record_type": "sns_media_manifest",
+  "persona_id": "in-women-nordic-natural",
+  "brand": "北欧と明かり",
+  "content_id": "nordic-wave2-IG-01-r2",
+  "target_network": "instagram",
+  "qa_id": "qa-nordic-ig01-r2-20260910-1434",
+  "qa_status": "PASS",
+  "placed_at": "2026-09-11T02:12:00+09:00",
+  "placed_by": "橋 / HASHI (Platform Operations)",
+  "source": "Google Drive /FUKASELL AI Affiliate Media/in-women-nordic-natural/nordic-wave2-IG-01-r2/ (byte-verified against QA sha256 before placement)",
+  "assets": [
+    {
+      "asset_id": "nordic-ig01-v1-s01",
+      "slide_order": 1,
+      "filename": "nordic-ig01-v1-s01.png",
+      "sha256": "0d89278dccc1a82c9224c6de8edaa6bd7285e361929fef20ffaa417cab8fca12",
+      "bytes": 219662,
+      "width": 1080,
+      "height": 1080,
+      "content_type": "image/png",
+      "qa_id": "qa-nordic-ig01-r2-20260910-1434",
+      "source_drive_file_id": "1gSc-60yWYHJSe8QXbIBfu0wZKEUINHeP",
+      "public_url": "https://fukasell.github.io/yoridori-media/assets/social/in-women-nordic-natural/nordic-wave2-IG-01-r2/nordic-ig01-v1-s01.png"
+    },
+    {
+      "asset_id": "nordic-ig01-v1-s02",
+      "slide_order": 2,
+      "filename": "nordic-ig01-v1-s02.png",
+      "sha256": "b66f0674bf651d865dec08c5d5c69a837ab29e3683db35906dfb801b2af50823",
+      "bytes": 210225,
+      "width": 1080,
+      "height": 1080,
+      "content_type": "image/png",
+      "qa_id": "qa-nordic-ig01-r2-20260910-1434",
+      "source_drive_file_id": "1_xK1ncG7AzaHDmzykiZP5nWGlqhlDJkN",
+      "public_url": "https://fukasell.github.io/yoridori-media/assets/social/in-women-nordic-natural/nordic-wave2-IG-01-r2/nordic-ig01-v1-s02.png"
+    },
+    {
+      "asset_id": "nordic-ig01-v1-s03",
+      "slide_order": 3,
+      "filename": "nordic-ig01-v1-s03.png",
+      "sha256": "648cebd2c6242e3637385ebbd08bd2204d19473bdf11fbecf233c9261b764719",
+      "bytes": 211230,
+      "width": 1080,
+      "height": 1080,
+      "content_type": "image/png",
+      "qa_id": "qa-nordic-ig01-r2-20260910-1434",
+      "source_drive_file_id": "1VDtUCf6F4gQwVXssFZV7llZBGi6BhQY0",
+      "public_url": "https://fukasell.github.io/yoridori-media/assets/social/in-women-nordic-natural/nordic-wave2-IG-01-r2/nordic-ig01-v1-s03.png"
+    },
+    {
+      "asset_id": "nordic-ig01-v1-s04",
+      "slide_order": 4,
+      "filename": "nordic-ig01-v1-s04.png",
+      "sha256": "960fb26ecafc9392d59c0c6b8680052c34a3b28f3a4a158790e5e59f5691507d",
+      "bytes": 227768,
+      "width": 1080,
+      "height": 1080,
+      "content_type": "image/png",
+      "qa_id": "qa-nordic-ig01-r2-20260910-1434",
+      "source_drive_file_id": "1ouVKWEuhJwwrLR1RcGne3ai5gUk-Fviv",
+      "public_url": "https://fukasell.github.io/yoridori-media/assets/social/in-women-nordic-natural/nordic-wave2-IG-01-r2/nordic-ig01-v1-s04.png"
+    }
+  ]
+}
