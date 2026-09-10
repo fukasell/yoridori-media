@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "record_type": "sns_media_manifest",
+  "persona_id": null,
+  "content_id": "media-transport-test-20260910",
+  "purpose": "public delivery path verification only; not for publishing",
+  "assets": [
+    {
+      "asset_id": "fukasell-media-transport-test-20260910",
+      "filename": "fukasell-media-transport-test-20260910.png",
+      "sha256": "15bb68305b30cd0635666867dc25f1c29308451dea74f199de2c856ea40b4a31",
+      "bytes": 6684,
+      "width": 1080,
+      "height": 1080,
+      "content_type": "image/png",
+      "qa_id": null,
+      "public_url": "https://fukasell.github.io/yoridori-media/assets/social/test/fukasell-media-transport-test-20260910.png"
+    }
+  ]
+}
