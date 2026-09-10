@@ -32,6 +32,26 @@ gtag('js',new Date());gtag('config','G-VGW7X9VFGJ');
   function personaId(){
     try{var v=new URLSearchParams(location.search).get('p');return v||null}catch(e){return null}
   }
+  // Keep the first-party persona attribution hint across the guide -> compare
+  // transition. Do not copy utm_* onto internal links because that can reset
+  // campaign attribution inside GA4. Only the non-identifying p hint moves.
+  function propagatePersonaHint(){
+    var p=personaId();
+    if(!p)return;
+    document.querySelectorAll('a[data-propagate-persona="1"]').forEach(function(a){
+      try{
+        var u=new URL(a.href,location.href);
+        if(u.origin!==location.origin)return;
+        u.searchParams.set('p',p);
+        a.href=u.toString();
+      }catch(e){}
+    });
+  }
+  if(document.readyState==='loading'){
+    document.addEventListener('DOMContentLoaded',propagatePersonaHint,{once:true});
+  }else{
+    propagatePersonaHint();
+  }
   // The affiliate URL carries account-identifying tracking tokens (a8mat,
   // maf, a_id). Those belong in the ASP's system, not in our analytics, so
   // only origin+path is recorded - enough to tell destinations apart,
@@ -90,7 +110,7 @@ gtag('js',new Date());gtag('config','G-VGW7X9VFGJ');
   <p class="disclaimer-note">手順・仕様は各社の都合により変更される場合があります。実施前に必ず公式サイト・公式マニュアルでご確認ください。</p>
   <nav class="related">
   <h2>詳しい比較記事</h2>
-  <ul><li><a href="../compare/interior-furniture-shop.html">家具・インテリア通販3社を比較｜北欧スタイル・保証・搬入で選ぶ</a></li></ul>
+  <ul><li><a href="../compare/interior-furniture-shop.html" data-propagate-persona="1">家具・インテリア通販3社を比較｜北欧スタイル・保証・搬入で選ぶ</a></li></ul>
 </nav>
 </article>
 </main>
