@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-site-verification" content="0W-gZFekzA8Jmp9gFt94_0ac3NYqPapqxqXsqfpktFw">
+<title>編集部について | 北欧と明かり</title>
+<meta name="description" content="「北欧と明かり」の編集コンセプト、編集レンズの考え方、運営元ヨリドリ（FUKASELL）、画像と広告の扱いについて。">
+<link rel="canonical" href="https://fukasell.github.io/yoridori-media/hokuoh-to-akari/about.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="北欧と明かり">
+<meta property="og:title" content="編集部について | 北欧と明かり">
+<meta property="og:description" content="「北欧と明かり」の編集コンセプト、編集レンズの考え方、運営元ヨリドリ（FUKASELL）、画像と広告の扱いについて。">
+<meta property="og:url" content="https://fukasell.github.io/yoridori-media/hokuoh-to-akari/about.html">
+<meta property="og:image" content="https://fukasell.github.io/yoridori-media/assets/social/in-women-nordic-natural/nordic-wave2-IG-01-r2/nordic-ig01-v1-s01.png">
+<meta property="og:image:width" content="1080">
+<meta property="og:image:height" content="1080">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="編集部について | 北欧と明かり">
+<meta name="twitter:description" content="「北欧と明かり」の編集コンセプト、編集レンズの考え方、運営元ヨリドリ（FUKASELL）、画像と広告の扱いについて。">
+<meta name="twitter:image" content="https://fukasell.github.io/yoridori-media/assets/social/in-women-nordic-natural/nordic-wave2-IG-01-r2/nordic-ig01-v1-s01.png">
+<meta name="theme-color" content="#f8f5ef">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"北欧と明かり","item":"https://fukasell.github.io/yoridori-media/hokuoh-to-akari/"},{"@type":"ListItem","position":2,"name":"編集部について","item":"https://fukasell.github.io/yoridori-media/hokuoh-to-akari/about.html"}]},{"@type":"AboutPage","name":"編集部について","url":"https://fukasell.github.io/yoridori-media/hokuoh-to-akari/about.html","inLanguage":"ja","publisher":{"@type":"Organization","name":"FUKASELL"},"dateModified":"2026-09-11"}]}</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VGW7X9VFGJ"></script>
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
+gtag('js',new Date());gtag('config','G-VGW7X9VFGJ');
+(function(){
+  // Attribution hint only: which of our own posts sent this reader here.
+  // Social posts append ?p=<persona_id>. It is NOT a property of the visitor
+  // and NOT a claim that a person exists - reading it as an audience segment
+  // would attribute traits to readers we have never measured. Absent means
+  // null, never a default bucket.
+  function personaId(){
+    try{var v=new URLSearchParams(location.search).get('p');return v||null}catch(e){return null}
+  }
+  // Keep the first-party persona attribution hint across the guide -> compare
+  // transition. Do not copy utm_* onto internal links because that can reset
+  // campaign attribution inside GA4. Only the non-identifying p hint moves.
+  function propagatePersonaHint(){
+    var p=personaId();
+    if(!p)return;
+    document.querySelectorAll('a[data-propagate-persona="1"]').forEach(function(a){
+      try{
+        var u=new URL(a.href,location.href);
+        if(u.origin!==location.origin)return;
+        u.searchParams.set('p',p);
+        a.href=u.toString();
+      }catch(e){}
+    });
+  }
+  if(document.readyState==='loading'){
+    document.addEventListener('DOMContentLoaded',propagatePersonaHint,{once:true});
+  }else{
+    propagatePersonaHint();
+  }
+  // The affiliate URL carries account-identifying tracking tokens (a8mat,
+  // maf, a_id). Those belong in the ASP's system, not in our analytics, so
+  // only origin+path is recorded - enough to tell destinations apart,
+  // nothing that identifies the account.
+  function safeUrl(href){
+    try{var u=new URL(href);return u.origin+u.pathname}catch(e){return null}
+  }
+  document.addEventListener('click',function(e){
+    var a=e.target.closest&&e.target.closest('a[data-affiliate="1"]');
+    if(!a)return;
+    gtag('event','affiliate_click',{
+      offer_id:a.dataset.offerId||null,
+      advertiser:a.dataset.advertiser||null,
+      network:a.dataset.network||null,
+      persona_id:personaId(),
+      // pathname only. A query string can carry the attribution hint or a
+      // campaign tag, and a fragment can carry anything; neither belongs in a
+      // page identifier used for grouping.
+      source_page:location.pathname,
+      outbound_url:safeUrl(a.href),
+      channel:'web_seo',
+      transport_type:'beacon'
+    });
+  },true);
+})();
+</script>
+</head>
+<body>
+<a class="hk-skip" href="#main">本文へ移動</a>
+<header class="hk-header">
+  <div class="hk-header-inner">
+    <a class="hk-brand" href="index.html" data-propagate-persona="1">
+      <span class="hk-brand-ja">北欧と明かり</span>
+      <span class="hk-brand-en">HOKUOH TO AKARI</span>
+    </a>
+    <nav class="hk-nav" aria-label="カテゴリ">
+      <a href="kurashi/index.html" data-propagate-persona="1">暮らし</a>
+      <a href="lighting/index.html" data-propagate-persona="1">照明</a>
+      <a href="interior/index.html" data-propagate-persona="1">インテリア</a>
+      <a href="about.html" data-propagate-persona="1">編集部</a>
+    </nav>
+  </div>
+</header>
+<main id="main" class="hk-main">
+
+<article class="hk-article hk-about">
+  <nav class="hk-breadcrumb" aria-label="パンくず"><a href="./index.html" data-propagate-persona="1">北欧と明かり</a><span aria-hidden="true"> / </span><span>編集部について</span></nav>
+  <header class="hk-article-head">
+    <p class="hk-kicker">ABOUT</p>
+    <h1 class="hk-article-title">編集部について</h1>
+  </header>
+
+  <h2>コンセプト</h2>
+  <p>「北欧と明かり」は、北欧スタイルの部屋づくりを、光と家具の決め方から考える読み物メディアです。家具を増やす前に、照明の読み方と、選ばない基準を先にそろえる。買う前に立ち止まる視点を、暮らし・照明・インテリアの3つの入り口から整理します。</p>
+  <p>感想や体験談ではなく、商品ページや公式情報に書かれていること（または書かれていないこと）の読み方を扱います。書かれていないこと自体が判断材料になる、というのが編集方針の要点です。</p>
+
+  <h2>編集レンズについて</h2>
+  <p>記事では「20代視点」「30代視点」「40代視点」という編集レンズを使います。これは読者層を想定した編集上の観点であり、特定の個人、家族構成、居住地、購入経験、職歴、資格、使用体験を表すものではありません。同じ商品ページでも、見る順番が変わると迷い方が変わる、という切り口として使っています。</p>
+
+  <h2>運営元</h2>
+  <table class="hk-info">
+    <tr><th scope="row">メディア名</th><td>北欧と明かり（HOKUOH TO AKARI）</td></tr>
+    <tr><th scope="row">運営</th><td><a href="../about.html">ヨリドリ（FUKASELL）</a>の編集ブランド</td></tr>
+    <tr><th scope="row">SNS</th><td><a href="https://www.instagram.com/hokuoh_to_akari/" rel="me noopener" target="_blank">Instagram</a> / <a href="https://www.threads.com/@hokuoh_to_akari" rel="me noopener" target="_blank">Threads</a>（@hokuoh_to_akari）</td></tr>
+    <tr><th scope="row">連絡先</th><td><a href="../contact.html">ヨリドリのお問い合わせページ</a>よりご連絡ください</td></tr>
+  </table>
+
+  <h2>画像について</h2>
+  <p>掲載しているビジュアルは、編集部がAIを用いて生成した編集イメージです。特定のショップや実際の商品の写真ではなく、記事の観点を伝えるためのものです。第三者の写真や商品画像は使用していません。</p>
+
+  <h2>広告・アフィリエイトについて</h2>
+  <p>本メディアの記事内には広告リンクを置いていません。選ぶ段階になったら、運営元ヨリドリの比較記事へ案内します。比較記事には提携リンク（アフィリエイト広告）を含み、その旨を該当ページに表示しています。掲載内容は報酬の有無で変えていません。詳細は<a href="../affiliate-policy.html">広告・アフィリエイトポリシー</a>をご覧ください。</p>
+  <p>価格、保証、送料、取扱いなどの条件は各ショップの都合により変更されます。記事は特定の外部資料を典拠とせず、商品ページに一般に表示される項目の読み方を整理したものです。個々の条件は必ず公式情報でご確認ください。<a href="../disclaimer.html">免責事項</a>、<a href="../privacy.html">プライバシーポリシー</a>、<a href="../site-policy.html">サイトポリシー</a>はヨリドリと共通です。</p>
+</article>
+</main>
+<footer class="hk-footer">
+  <div class="hk-footer-inner">
+    <p class="hk-footer-brand">北欧と明かり</p>
+    <p class="hk-footer-note">運営元：<a href="../about.html">ヨリドリ（FUKASELL）</a>。本メディアはヨリドリの編集ブランドとして運営しています。掲載イメージはAI生成の編集ビジュアルで、実際の商品写真ではありません。</p>
+    <p class="hk-footer-note">記事内に広告リンクはありません。リンク先のヨリドリ比較記事には提携リンク（アフィリエイト広告）を含みます。詳細は<a href="../affiliate-policy.html">広告・アフィリエイトポリシー</a>をご覧ください。</p>
+    <nav class="hk-footer-nav" aria-label="サイト情報">
+      <a href="about.html" data-propagate-persona="1">編集部について</a>
+      <a href="../about.html">運営者情報</a>
+      <a href="../affiliate-policy.html">広告・アフィリエイトポリシー</a>
+      <a href="../privacy.html">プライバシーポリシー</a>
+      <a href="../disclaimer.html">免責事項</a>
+      <a href="../contact.html">お問い合わせ</a>
+      <a href="../site-policy.html">サイトポリシー</a>
+      <a href="../index.html">ヨリドリ トップ</a>
+    </nav>
+    <p class="hk-copy">&copy; 2026 ヨリドリ / 北欧と明かり</p>
+  </div>
+</footer>
+</body>
+</html>
