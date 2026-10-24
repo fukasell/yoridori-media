@@ -72,7 +72,7 @@ gtag('js',new Date());gtag('config','G-VGW7X9VFGJ');
       // page identifier used for grouping.
       source_page:location.pathname,
       outbound_url:safeUrl(a.href),
-      channel:'web_seo',
+      // Acquisition source/medium comes from the GA4 session, not this page.
       transport_type:'beacon'
     });
   },true);
