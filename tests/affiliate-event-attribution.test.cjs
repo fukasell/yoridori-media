@@ -15,9 +15,16 @@ test('affiliate clicks preserve offer/persona with no invented SEO acquisition',
   assert.ok(files.length >= 33, 'unexpectedly lost affiliate click instrumented pages');
   for (const file of files) {
     const html = fs.readFileSync(file,'utf8');
-    assert.match(html, /offer_id\s*:/, file);
-    assert.match(html, /persona_id\s*:/, file);
-    assert.match(html, /source_page\s*:/, file);
-    assert.doesNotMatch(html, /channel\s*:\s*['"]web_seo['"]/, file);
+    const start = html.indexOf("gtag('event','affiliate_click'");
+    const event = html.slice(start, start + 900);
+    assert.match(event, /offer_id\s*:\s*a\.dataset\.offerId\|\|null/, file);
+    assert.match(event, /advertiser\s*:\s*a\.dataset\.advertiser\|\|null/, file);
+    assert.match(event, /network\s*:\s*a\.dataset\.network\|\|null/, file);
+    assert.match(event, /persona_id\s*:\s*personaId\(\)/, file);
+    assert.match(event, /source_page\s*:\s*location\.pathname/, file);
+    assert.match(event, /outbound_url\s*:\s*safeUrl\(a\.href\)/, file);
+    assert.match(event, /transport_type\s*:\s*['"]beacon['"]/, file);
+    assert.doesNotMatch(event, /\bchannel\s*:/, file);
+    assert.match(html, /return u\.origin\+u\.pathname/, file);
   }
 });
